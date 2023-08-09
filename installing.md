@@ -38,6 +38,8 @@ Launch wsl from your terminal of choice.
 
         wsl
         /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+        echo 'export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"' >> ~/.bashrc
+        export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
         brew install wardenenv/warden/warden
         warden svc up
 
